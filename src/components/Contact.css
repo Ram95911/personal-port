@@ -1,0 +1,21 @@
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact .btn {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .contact .btn:hover {
+    background: #1e7e34;
+  }
+  
