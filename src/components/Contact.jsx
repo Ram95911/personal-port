@@ -35,10 +35,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        "service_xgsx7sh",       // e.g., "service_abc123"
-        "template_jh53s3n",      // e.g., "template_xyz789"
+        "service_xgsx7sh",      
+        "template_jh53s3n",      
         e.target,
-        "vowbh2VA6-HPuWTkX"        // e.g., "XyZ123_ABcDEF"
+        "vowbh2VA6-HPuWTkX"       
       )
       .then(
         (result) => {

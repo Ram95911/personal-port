@@ -73,4 +73,15 @@
     }
   }
   
+  .github-link {
+    display: inline-block;
+    margin: 20px 0;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .github-link:hover {
+    color: #000;
+  }
+
+  
   
