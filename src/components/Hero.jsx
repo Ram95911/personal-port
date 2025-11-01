@@ -22,7 +22,7 @@ export default function Hero() {
         <h2>
           <span style={{ color: '#555', fontSize: '18px' }}>
             <Typewriter
-              words={['Full Stack Developer', 'AI Enthusiast', 'SQL', 'Git','Happy Kannda Rajyotsava']}
+              words={['Full Stack Developer', 'AI Enthusiast', 'SQL', 'Git',]}
               loop={true}
               cursor
               cursorStyle="|"
