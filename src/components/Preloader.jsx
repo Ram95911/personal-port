@@ -5,7 +5,7 @@ const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); // Adjust duration
+    const timer = setTimeout(() => setLoading(false), 2000); 
     return () => clearTimeout(timer);
   }, []);
 
