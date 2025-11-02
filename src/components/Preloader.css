@@ -1,0 +1,51 @@
+.preloader-container {
+    position: fixed;
+    inset: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .preloader-content {
+    text-align: center;
+  }
+  
+  .preloader-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .loader {
+    width: 150px;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .loader::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-color: #db8234;
+    animation: slide 1.2s ease-in-out infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      left: -40%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -40%;
+    }
+  }
