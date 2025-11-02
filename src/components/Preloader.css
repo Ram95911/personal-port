@@ -1,7 +1,7 @@
 .preloader-container {
     position: fixed;
     inset: 0;
-    background-color: #ffffff;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,34 +18,32 @@
     margin-bottom: 20px;
   }
   
-  .loader {
-    width: 150px;
-    height: 6px;
-    background: #e0e0e0;
-    border-radius: 3px;
+  /* Loader bar container */
+  .loader-bar {
+    width: 200px;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
     overflow: hidden;
-    position: relative;
+    margin: 0 auto;
   }
   
-  .loader::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
+  /* Animated fill */
+  .loader-fill {
     height: 100%;
-    width: 60%;
-    background-color: #db8234;
-    animation: slide 1.2s ease-in-out infinite;
+    width: 0%;
+    background: linear-gradient(to right, yellow, red);
+    animation: load 3s ease-in-out forwards;
   }
   
-  @keyframes slide {
+  @keyframes load {
     0% {
-      left: -40%;
-    }
-    50% {
-      left: 100%;
+      width: 0%;
+      background-color: yellow;
     }
     100% {
-      left: -40%;
+      width: 100%;
+      background-color: red;
     }
   }
+  
